@@ -8,3 +8,22 @@ h6,p, h2 {
     color: $main-white;
   }
 }
+
+.meta-icon {
+  color: black;
+  cursor: pointer;
+
+  &.__white {
+  color: $main-white;
+  }
+
+  i {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+  p {
+    display: inline-block;
+    font-size: 15px;
+  }
+}

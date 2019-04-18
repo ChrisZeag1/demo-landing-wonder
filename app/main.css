@@ -32,6 +32,18 @@ h6.__op-7, p.__op-7, h2.__op-7 {
 h6.__white, p.__white, h2.__white {
   color: #F6FCFF; }
 
+.meta-icon {
+  color: black;
+  cursor: pointer; }
+  .meta-icon.__white {
+    color: #F6FCFF; }
+  .meta-icon i {
+    font-size: 20px;
+    vertical-align: middle; }
+  .meta-icon p {
+    display: inline-block;
+    font-size: 15px; }
+
 .row .col.Card {
   background-color: #E83267;
   border-radius: 15px;
@@ -61,11 +73,12 @@ h6.__white, p.__white, h2.__white {
     .row .col.Card .block-info p, .row .col.Card .block-info a {
       opacity: 0.7;
       margin: 10px; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 600px) {
     .row .col.Card {
       margin-bottom: 60px; }
       .row .col.Card img {
-        height: 289px; }
+        height: 289px;
+        width: 100%; }
       .row .col.Card .block-info p, .row .col.Card a {
         margin: 10px;
         font-weight: 600;
@@ -75,7 +88,7 @@ h6.__white, p.__white, h2.__white {
   height: 100%;
   white-space: inherit;
   background-color: transparent; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 600px) {
     .tabs {
       display: block; } }
   .tabs .tab {
@@ -118,7 +131,7 @@ h6.__white, p.__white, h2.__white {
 .Phone-container img {
   height: 865px; }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 600px) {
   .Phone-container {
     display: none; } }
 
@@ -139,7 +152,7 @@ body {
     body .people.two {
       background-repeat: no-repeat;
       background-image: url("./assets/people-screen-2.png"); }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 600px) {
       body .people.one {
         background-image: none; }
         body .people.one h2, body .people.one h6 {
@@ -147,16 +160,4 @@ body {
         body .people.one .Global.__bc {
           display: block; }
       body .people.two {
-        background-repeat: no-repeat;
-        background-image: url("./assets/people-screen-2.png"); } }
-  body .meta-icon {
-    color: black;
-    cursor: pointer; }
-    body .meta-icon.__white {
-      color: #F6FCFF; }
-    body .meta-icon i {
-      font-size: 20px;
-      vertical-align: middle; }
-    body .meta-icon p {
-      display: inline-block;
-      font-size: 15px; }
+        background-image: none; } }
