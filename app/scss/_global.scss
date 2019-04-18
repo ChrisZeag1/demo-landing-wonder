@@ -1,7 +1,13 @@
+@import './_variables.scss';
+
 .Global {
 
   &.__tc {
     text-align: center;
+  }
+
+  &.__no-pading {
+    padding: 0;
   }
 
   &.__bc {
@@ -13,8 +19,24 @@
 
   }
 
+  &.__full-vh {
+    height: 110vh;
+  }
+
+  &.__quart-vh {
+   height: 20vh; 
+  }
+
   &.__hidden {
     display: none;
+  }
+
+    &.__extra-m-t {
+    margin-top: 25px;
+  }
+
+  &.__extra-h-m-t {
+    margin-top: 35px;
   }
 
 }

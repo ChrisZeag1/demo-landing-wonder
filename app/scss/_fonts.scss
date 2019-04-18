@@ -1,0 +1,10 @@
+@import './_variables.scss';
+
+h6,p, h2 {
+  &.__op-7 {
+    opacity: 0.7;
+  }
+    &.__white {
+    color: $main-white;
+  }
+}

@@ -1,0 +1,13 @@
+@import './_variables.scss';
+
+.Phone-container {
+  
+  img {
+    height: 865px; 
+  }
+
+  @media only screen and (max-width: $min-desktop) {
+    display: none;
+  }
+  
+}

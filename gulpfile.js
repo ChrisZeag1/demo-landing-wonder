@@ -8,7 +8,7 @@ sass.compiler = require('node-sass');
  
 gulp.task('sass',  () => {
   console.log('runnig sasss> ');
-  return gulp.src('./app/scss/main.scss')
+  return gulp.src('./app/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./app/'));
 });
@@ -41,7 +41,7 @@ gulp.task('serve', (done) => {
 
 gulp.task('watch:sass', () => {
   console.log('runnig sass watch...');
-  gulp.watch('./app/scss/main.scss', gulp.series('sass', 'reload'));
+  gulp.watch('./app/scss/*.scss', gulp.series('sass', 'reload'));
 });
 
 gulp.task('watch:html', () => {

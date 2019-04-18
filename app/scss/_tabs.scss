@@ -1,0 +1,66 @@
+@import './_variables.scss';
+
+.tabs {
+  height: 100%;
+  white-space: inherit;
+  background-color: transparent;
+  @media only screen and (max-width: $min-desktop) {
+    display: block;
+  }
+
+  .tab {
+    margin: 10px 0;
+    height: 100%;
+    text-align: left;
+    text-transform: none;
+    position: relative;
+    transition: 1s;
+
+    #bg-selected {
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      border-radius: 8px;
+      transition: .3s;
+      transform: translate(0,0);
+    }
+
+    img {
+          z-index: 1;
+          height: 214px;
+    }
+
+    .desc {
+      z-index: 2;
+      position: relative;
+      display: inline-block;
+      color: white;
+      padding: 0 25px;
+
+      p {
+        line-height: 25px;
+      }
+
+    }
+
+    &.__selected {
+      .desc {
+        color: black;
+      }
+      
+      .number {
+        color: $second-red;
+      }
+    }    
+
+    .number {
+      position: absolute;
+      top: 50%;  
+      left: -5px; 
+      transform: translate(-50%, -50%); 
+    }
+
+  }
+}

@@ -1,3 +1,79 @@
+@charset "UTF-8";
 @import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css');
 @import './_global.scss';
-@import './_variables.sccs';
+@import './_variables.scss';
+@import './_fonts.scss';
+@import './_card.scss';
+@import './_tabs.scss';
+@import './_phone.scss';
+@import './assets/icons/styles.css';
+
+body {
+  background: $main-white;
+
+  &.first-screen {
+    background-repeat: no-repeat;
+    background-image: url('./assets/dev-test-screen-1.png');
+    background-attachment: fixed;
+    transition:  background-image 1s;
+    &.second-screen {
+      background-image: url('./assets/dev-test-screen-2.png');
+    }
+  }
+
+
+  .people {
+    transition: 1s background-image;
+
+    &.one {
+      background-repeat: no-repeat;
+      background-image: url('./assets/people-screen-1.png');
+    }
+
+    &.two {
+      background-repeat: no-repeat;
+      background-image: url('./assets/people-screen-2.png');
+    }
+
+    @media only screen and (max-width: $min-desktop) {
+
+      &.one { 
+        background-image: none;
+
+        h2,h6 {
+          text-align: center;
+        }
+
+        .Global.__bc {
+          display: block;
+        }
+      }
+
+      &.two {
+        background-repeat: no-repeat;
+        background-image: url('./assets/people-screen-2.png');
+      }
+
+    }    
+  }
+
+  .meta-icon {
+    color: black;
+    cursor: pointer;
+
+    &.__white {
+    color: $main-white;
+    }
+
+    i {
+      font-size: 20px;
+      vertical-align: middle;
+    }
+
+    p {
+      display: inline-block;
+      font-size: 15px;
+    }
+  }
+
+}

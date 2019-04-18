@@ -1,11 +1,162 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css");
+@import url(./assets/icons/styles.css);
 .Global.__tc {
   text-align: center; }
+
+.Global.__no-pading {
+  padding: 0; }
 
 .Global.__bc {
   display: flex; }
   .Global.__bc * {
     margin: auto; }
 
+.Global.__full-vh {
+  height: 110vh; }
+
+.Global.__quart-vh {
+  height: 20vh; }
+
 .Global.__hidden {
   display: none; }
+
+.Global.__extra-m-t {
+  margin-top: 25px; }
+
+.Global.__extra-h-m-t {
+  margin-top: 35px; }
+
+h6.__op-7, p.__op-7, h2.__op-7 {
+  opacity: 0.7; }
+
+h6.__white, p.__white, h2.__white {
+  color: #F6FCFF; }
+
+.row .col.Card {
+  background-color: #E83267;
+  border-radius: 15px;
+  height: 635px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.57), 0px 14px 20px 0 rgba(0, 0, 0, 0.21);
+  margin-top: 45px; }
+  .row .col.Card img {
+    height: 319px; }
+  .row .col.Card .block-info {
+    height: 319px;
+    padding: 15px;
+    color: #F6FCFF; }
+    .row .col.Card .block-info h4 {
+      font-weight: 300; }
+    .row .col.Card .block-info a {
+      color: #F6FCFF;
+      text-decoration: underline;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      cursor: pointer; }
+    .row .col.Card .block-info p, .row .col.Card .block-info a {
+      opacity: 0.7;
+      margin: 10px; }
+  @media only screen and (max-width: 992px) {
+    .row .col.Card {
+      margin-bottom: 60px; }
+      .row .col.Card img {
+        height: 289px; }
+      .row .col.Card .block-info p, .row .col.Card a {
+        margin: 10px;
+        font-weight: 600;
+        font-size: 18px; } }
+
+.tabs {
+  height: 100%;
+  white-space: inherit;
+  background-color: transparent; }
+  @media only screen and (max-width: 992px) {
+    .tabs {
+      display: block; } }
+  .tabs .tab {
+    margin: 10px 0;
+    height: 100%;
+    text-align: left;
+    text-transform: none;
+    position: relative;
+    transition: 1s; }
+    .tabs .tab #bg-selected {
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      border-radius: 8px;
+      transition: .3s;
+      transform: translate(0, 0); }
+    .tabs .tab img {
+      z-index: 1;
+      height: 214px; }
+    .tabs .tab .desc {
+      z-index: 2;
+      position: relative;
+      display: inline-block;
+      color: white;
+      padding: 0 25px; }
+      .tabs .tab .desc p {
+        line-height: 25px; }
+    .tabs .tab.__selected .desc {
+      color: black; }
+    .tabs .tab.__selected .number {
+      color: #E83267; }
+    .tabs .tab .number {
+      position: absolute;
+      top: 50%;
+      left: -5px;
+      transform: translate(-50%, -50%); }
+
+.Phone-container img {
+  height: 865px; }
+
+@media only screen and (max-width: 992px) {
+  .Phone-container {
+    display: none; } }
+
+body {
+  background: #F6FCFF; }
+  body.first-screen {
+    background-repeat: no-repeat;
+    background-image: url("./assets/dev-test-screen-1.png");
+    background-attachment: fixed;
+    transition: background-image 1s; }
+    body.first-screen.second-screen {
+      background-image: url("./assets/dev-test-screen-2.png"); }
+  body .people {
+    transition: 1s background-image; }
+    body .people.one {
+      background-repeat: no-repeat;
+      background-image: url("./assets/people-screen-1.png"); }
+    body .people.two {
+      background-repeat: no-repeat;
+      background-image: url("./assets/people-screen-2.png"); }
+    @media only screen and (max-width: 992px) {
+      body .people.one {
+        background-image: none; }
+        body .people.one h2, body .people.one h6 {
+          text-align: center; }
+        body .people.one .Global.__bc {
+          display: block; }
+      body .people.two {
+        background-repeat: no-repeat;
+        background-image: url("./assets/people-screen-2.png"); } }
+  body .meta-icon {
+    color: black;
+    cursor: pointer; }
+    body .meta-icon.__white {
+      color: #F6FCFF; }
+    body .meta-icon i {
+      font-size: 20px;
+      vertical-align: middle; }
+    body .meta-icon p {
+      display: inline-block;
+      font-size: 15px; }

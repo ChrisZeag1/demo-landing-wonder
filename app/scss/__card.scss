@@ -1,0 +1,58 @@
+@import './_variables.scss';
+
+.row .col.Card {
+  background-color: $second-red;
+  border-radius: 15px;
+  // in the mockup border-raduis is 13px but the picture has a radius of 15px;
+  height: 635px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.57), 0px 14px 20px 0 rgba(0, 0, 0, 0.21);
+  margin-top: 45px;
+  img {
+    height: 319px;
+  }
+
+  .block-info {
+    h4 {
+      font-weight: 300;
+    }
+
+    height: 319px;
+    padding:15px;
+    color: $main-white;
+
+    a {
+      color: $main-white;
+      text-decoration: underline;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      cursor: pointer;
+    }
+
+    p,a {
+      opacity: 0.7;
+      margin: 10px;
+    }
+  }
+
+  @media only screen and (max-width: $min-desktop) {
+    margin-bottom: 60px;
+
+    img {
+      height: 289px;
+    }
+
+    .block-info p,a {
+      margin: 10px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+  }  
+}
+
